@@ -5,7 +5,7 @@
 
 let firstName = prompt("Ім'я:");
 let lastName = prompt("По-батькові:");
-let age = prompt("Вік:");
+let age = +prompt("Вік:");
 
 console.log("Ім'я: " + firstName);
 console.log("По-батькові: " + lastName);
