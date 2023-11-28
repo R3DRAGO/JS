@@ -21,7 +21,7 @@ let users = [
 
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
-//     if (user.status === true){
+//     if (user.status){
 //         console.log(user)
 //     }
 // }
@@ -30,7 +30,7 @@ let users = [
 
 // for (let i = 0; i < users.length; i++) {
 //     const user = users[i];
-//     if (user.status === false){
+//     if (!user.status){
 //         console.log(user)
 //     }
 // }
