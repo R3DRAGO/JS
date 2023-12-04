@@ -84,7 +84,7 @@ function courses(array) {
         for (const itemKey in item) {
             // console.log(itemKey)
             document.write(`<div>
-                <h2 style="color: #1010e1">${itemKey}: 
+                <h2 style="color: #1010e1">${itemKey}:
                 <span style="color: #267726">${item[itemKey]}</span>
                 </h2>
                 </div>`)
