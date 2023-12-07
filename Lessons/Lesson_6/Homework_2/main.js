@@ -95,7 +95,7 @@ let cards = [
 
 // - знайти піковий туз
 let piqueAce = cards.filter(card => card.cardSuit === 'spade' && card.value === 'ace')[0];
-console.log('Піковий туз:', piqueAce);
+console.log(piqueAce);
 // ====================================================================================================
 
 // - всі шістки
@@ -114,7 +114,10 @@ console.log(diamonds);
 // ====================================================================================================
 
 // - всі трефи від 9 та більше
-let highValueClubs = cards.filter(card => card.cardSuit === 'clubs' && card.value >= '9');
+let highValueClubs = cards.filter(card => card.cardSuit === 'clubs' && (
+    card.value === '9' || card.value === '10'
+    || card.value === 'jack' || card.value === 'queen'
+    || card.value === 'king' || card.value === 'ace'));
 console.log(highValueClubs);
 
 
@@ -128,10 +131,10 @@ console.log(highValueClubs);
 //     clubs:[]
 // }
 
-let groupedBySuits = cards.reduce((accumulator, card) => {
-    accumulator[card.cardSuit].push(card);
-    return accumulator;
-}, { spade: [], diamond: [], heart: [], clubs: [] });
-
-console.log(groupedBySuits);
+// let groupedBySuits = cards.reduce((accumulator, card) => {
+//     accumulator[card.cardSuit].push(card);
+//     return accumulator;
+// }, { spade: [], diamond: [], heart: [], clubs: [] });
+//
+// console.log(groupedBySuits);
 
